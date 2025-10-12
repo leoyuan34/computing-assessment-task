@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}{{ country_name }} Photography - Transit Travel Forum{% endblock %}
+{% block content %}
+
+<div class="breadcrumb">
+  <a href="{{ url_for('photography') }}">Photography</a>
+  <span>/</span>
+  <a href="{{ url_for('continent_photos', continent=continent) }}">{{ continent_name }}</a>
+  <span>/</span>
+  <span>{{ country_name }}</span>
+</div>
+
+<h1>{{ country_name }} Photography</h1>
+<p style="text-align: center; color: #666; margin-bottom: 40px;">Beautiful moments captured in {{ country_name }}</p>
+
+<!-- Gallery grid -->
+<div class="gallery-grid">
+  {% for photo in photos %}
+  <div class="gallery-item">
+    <img src="{{ url_for('static', filename='images/photography/galleries/' + country + '/' + photo) }}" alt="{{ country_name }} Photo">
+  </div>
+  {% endfor %}
+</div>
+
+{% if photos|length == 0 %}
+<p style="text-align: center; color: #999; font-size: 1.2em; margin-top: 50px;">
+  No photos available yet. Check back soon!
+</p>
+{% endif %}
+
+{% endblock %}

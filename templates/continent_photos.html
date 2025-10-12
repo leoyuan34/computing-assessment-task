@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}{{ continent_name }} Photography - Transit Travel Forum{% endblock %}
+{% block content %}
+
+<a href="{{ url_for('photography') }}" class="back-button">
+  <i class="fa-solid fa-arrow-left"></i> Back to Photography
+</a>
+
+<h1>{{ continent_name }} Photography</h1>
+<p style="text-align: center; color: #666; margin-bottom: 40px;">Explore photos from countries in {{ continent_name }}</p>
+
+<!-- Grid of countries -->
+<div class="countries-grid">
+  {% for country in countries %}
+  <a href="{{ url_for('country_photos', continent=continent, country=country) }}" class="country-item">
+    <img src="{{ url_for('static', filename='images/photography/countries/' + continent + '/' + country + '.jpg') }}" alt="{{ country|replace('-', ' ')|title }} Photography">
+    <div class="country-overlay">
+      <span class="country-title">{{ country|replace('-', ' ')|title }}</span>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+
+{% endblock %}

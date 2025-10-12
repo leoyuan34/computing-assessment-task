@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}Photography - Transit Travel Forum{% endblock %}
+{% block content %}
+
+<h1>Travel Photography</h1>
+<p style="text-align: center; color: #666; margin-bottom: 40px;">Explore stunning photography from around the world</p>
+
+<!-- Grid of continents -->
+<div class="photography-grid">
+  <a href="{{ url_for('continent_photos', continent='africa') }}" class="photo-item">
+    <img src="{{ url_for('static', filename='images/photography/continents/africa.jpg') }}" alt="Africa Photography">
+    <div class="photo-overlay">
+      <span class="photo-title">Africa</span>
+      <span class="photo-subtitle">Explore Photos</span>
+    </div>
+  </a>
+  
+  <a href="{{ url_for('continent_photos', continent='asia') }}" class="photo-item">
+    <img src="{{ url_for('static', filename='images/photography/continents/asia.jpg') }}" alt="Asia Photography">
+    <div class="photo-overlay">
+      <span class="photo-title">Asia</span>
+      <span class="photo-subtitle">Explore Photos</span>
+    </div>
+  </a>
+  
+  <a href="{{ url_for('continent_photos', continent='europe') }}" class="photo-item">
+    <img src="{{ url_for('static', filename='images/photography/continents/europe.jpg') }}" alt="Europe Photography">
+    <div class="photo-overlay">
+      <span class="photo-title">Europe</span>
+      <span class="photo-subtitle">Explore Photos</span>
+    </div>
+  </a>
+  
+  <a href="{{ url_for('continent_photos', continent='north-america') }}" class="photo-item">
+    <img src="{{ url_for('static', filename='images/photography/continents/north_america.jpg') }}" alt="North America Photography">
+    <div class="photo-overlay">
+      <span class="photo-title">North America</span>
+      <span class="photo-subtitle">Explore Photos</span>
+    </div>
+  </a>
+  
+  <a href="{{ url_for('continent_photos', continent='south-america') }}" class="photo-item">
+    <img src="{{ url_for('static', filename='images/photography/continents/south_america.jpg') }}" alt="South America Photography">
+    <div class="photo-overlay">
+      <span class="photo-title">South America</span>
+      <span class="photo-subtitle">Explore Photos</span>
+    </div>
+  </a>
+  
+  <a href="{{ url_for('continent_photos', continent='oceania') }}" class="photo-item">
+    <img src="{{ url_for('static', filename='images/photography/continents/oceania.jpg') }}" alt="Oceania Photography">
+    <div class="photo-overlay">
+      <span class="photo-title">Oceania</span>
+      <span class="photo-subtitle">Explore Photos</span>
+    </div>
+  </a>
+</div>
+
+{% endblock %}

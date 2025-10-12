@@ -1,0 +1,660 @@
+{% extends "base.html" %}
+{% block title %}Explore - Transit Travel Forum{% endblock %}
+{% block content %}
+
+<h1>Explore the Continents</h1>
+
+<br>
+
+<!-- Grid of continents -->
+<div class="explore-grid">
+  <a href="#africa" class="grid-item">
+    <img src="{{ url_for('static', filename='images/continents/africa.jpg') }}" alt="Africa">
+    <span>Africa</span>
+  </a>
+  <a href="#asia" class="grid-item">
+    <img src="{{ url_for('static', filename='images/continents/asia.jpg') }}" alt="Asia">
+    <span>Asia</span>
+  </a>
+  <a href="#europe" class="grid-item">
+    <img src="{{ url_for('static', filename='images/continents/europe.jpg') }}" alt="Europe">
+    <span>Europe</span>
+  </a>
+  <a href="#north-america" class="grid-item">
+    <img src="{{ url_for('static', filename='images/continents/north_america.jpg') }}" alt="North America">
+    <span>North America</span>
+  </a>
+  <a href="#south-america" class="grid-item">
+    <img src="{{ url_for('static', filename='images/continents/south_america.jpg') }}" alt="South America">
+    <span>South America</span>
+  </a>
+  <a href="#oceania" class="grid-item">
+    <img src="{{ url_for('static', filename='images/continents/oceania.jpg') }}" alt="Oceania">
+    <span>Oceania</span>
+  </a>
+</div>
+
+<!-- Info sections -->
+<div class="continent-info">
+  <section id="africa">
+  <h2>Africa</h2>
+  <br>
+
+  <h3>Introduction</h3>
+  <p>
+    Africa is a vast continent of diverse cultures and landscapes. Surpassed in size and population only by Asia, Africa boasts about 14% of the world's population and over 20% of the total global land area. Most of this land is dominated by desert and savannah plains, though there are also stretches of rainforest.
+  </p>
+  <br>
+  <p>
+    Owing to its history of being a colonised land, traditional African culture is infused with Arabic and European influences. Especially the northern parts of Africa, including the Magreb countries and Egypt, are more Arabic than really African. Arabic influences are also noticeable along the western coastline and islands off the coast like Zanzibar, Madagascar and Mauritius. The European influences are scattered across the continent but are best seen and felt in southern Africa, in countries like South Africa and Namibia.
+  </p>
+
+  <br><br>
+  <h3>Geography</h3>
+  <p>
+    Africa's geography is as diverse as its culture. The continent is surrounded by the Mediterranean Sea to the north, the Northern and Southern Atlantic Ocean to the west, and the Indian Ocean, the Red Sea and the Suez Canal to the east. The Suez Canal divides Africa from the Middle East geographically, not politically, as the Sinai Peninsula is also part of Egypt. The waters that border Africa are dotted with many islands officially part of Africa as well, like the Seychelles, Mauritius and Sao Tome and Principe, although many of these islands have a distinct culture from the mainland.
+  </p>
+  <br>
+  <p>
+    The northern part of Africa contains the largest non-arctic desert in the world — the Sahara. Northwest of it lies the Atlas Mountains, one of the highest mountain ranges of Africa, stretching from southern Morocco through Algeria to Tunisia. South of the Sahara is a transition zone of savanna grasslands and semi-desert. Further south and southeast, tropical rainforests dominate the landscape. Central Africa includes volcanic mountain ranges such as the Ruwenzori Mountains and Mount Cameroon — one of the highest peaks in Africa after Kilimanjaro. Farther south, the continent transitions again into semi-desert landscapes and savannah before reaching the Kalahari and Namib Deserts. Finally, South Africa’s southern coast enjoys a pleasant, Mediterranean-like climate.
+  </p>
+
+  <br><br>
+  <h3>Subregions</h3>
+  <p>Africa is often divided into several subregions, each with its own unique characteristics:</p>
+  <ul>
+    <li><b>North Africa:</b> Egypt, Libya, Tunisia, Algeria, and Morocco. Known for its deserts, ancient history, and Mediterranean coastline.</li><br>
+    <li><b>West Africa:</b> Nigeria, Ghana, Senegal, and Ivory Coast. Known for vibrant cultures, music, and historical trade routes.</li><br>
+    <li><b>East Africa:</b> Kenya, Tanzania, Uganda, and Ethiopia. Famous for wildlife safaris, the Great Rift Valley, and Mount Kilimanjaro.</li><br>
+    <li><b>Central Africa:</b> Democratic Republic of Congo, Cameroon, and Gabon. Known for dense rainforests and diverse wildlife.</li><br>
+    <li><b>Southern Africa:</b> South Africa, Botswana, Namibia, and Zimbabwe. Renowned for stunning landscapes, wildlife reserves, and cultural heritage.</li>
+  </ul>
+
+  <br><br>
+  <h3>Sights and Activities</h3>
+
+  <h4>Major Cities</h4>
+  <p>
+    <b>Accra</b>, Ghana<br>
+    <b>Addis Ababa</b>, Ethiopia<br>
+    <b>Cairo</b>, Egypt<br>
+    <b>Cape Town</b>, South Africa<br>
+    <b>Casablanca</b>, Morocco<br>
+    <b>Dakar</b>, Senegal<br>
+    <b>Dar es Salaam</b>, Tanzania<br>
+    <b>Johannesburg</b>, South Africa<br>
+    <b>Kampala</b>, Uganda<br>
+    <b>Lagos</b>, Nigeria<br>
+    <b>Kinshasa</b>, D.R. Congo<br>
+    <b>Marrakech</b>, Morocco<br>
+    <b>Nairobi</b>, Kenya<br>
+    <b>Timbuktu</b>, Mali
+  </p>
+
+  <br><br>
+  <h4>Landmarks</h4>
+  <p>
+    <b>Lake Victoria</b> — Africa's largest lake, spanning 68,800 km².<br><br>
+    <b>Victoria Falls</b> — one of the biggest and most beautiful waterfalls in the world.<br><br>
+    <b>Mount Kilimanjaro</b> — Africa's tallest mountain and the highest free-standing mountain in the world.<br><br>
+    <b>The Nile River</b> — arguably the longest river in the world.<br><br>
+    <b>The Sahara Desert</b> — the world's second-largest desert after Antarctica.<br><br>
+    <b>The Giza Pyramids and Great Sphinx</b> — iconic attractions that have fascinated travelers for thousands of years.<br><br>
+    <b>The Mud Mosques of Timbuktu and Djenné</b> — unique architectural marvels of Mali.
+  </p>
+
+  <br><br>
+  <h4>Safari</h4>
+  <p>
+    Safaris were 'invented' in Africa. The term, which means "journey" in Swahili, now refers globally to wildlife expeditions through Africa's national parks in search of the "Big Five" — elephant, lion, leopard, buffalo, and rhino.
+  </p>
+  <br>
+  <p>
+    Tanzania offers two of the best-known parks in the world: the Serengeti and the Ngorongoro Crater. Other top safari destinations include Kenya, South Africa, Botswana, Namibia, and Zimbabwe. Namibia and Botswana offer some of the best self-drive safari routes in the world.
+  </p>
+  <br>
+  <p>
+    Other wildlife highlights include Etosha National Park (Namibia), Hwange National Park (Zimbabwe), South Luangwa National Park (Zambia), and mountain gorilla trekking in Uganda, Rwanda, and the Democratic Republic of Congo.
+  </p>
+
+  <br><br>
+  <h4>Beaches and Islands</h4>
+  <p>
+    Africa has spectacular beaches, especially in the east. Notable destinations include:<br><br>
+    <b>Mombasa</b>, Kenya<br>
+    <b>Zanzibar, Pemba & Mafia Islands</b>, Tanzania<br>
+    <b>Seychelles</b> — especially Praslin and La Digue<br>
+    <b>Mauritius</b> — a classic honeymoon destination<br>
+    <b>Bazaruto Archipelago</b>, Mozambique<br>
+    <b>Ghana, Benin, Sierra Leone, Togo, Gambia</b> — underrated Atlantic beaches<br>
+    <b>Egypt's Red Sea Coast</b> — premier snorkeling and diving spots<br>
+    <b>Principe</b> — an off-the-beaten-track tropical paradise
+  </p>
+
+  <br><br>
+  <h3>Getting There</h3>
+  <p>
+    Most travelers fly into Africa, though there are fewer flights compared to Asia. The most connected regions are eastern and southern Africa. South Africa has flights from Europe, Asia, and even South America. You can also reach northern Africa by ferry — for instance, from Spain to Morocco or Italy to Tunisia. Overland travel across the continent is common among adventurers, particularly north-to-south routes.
+  </p>
+
+  <br><br>
+  <h3>Best Time to Visit</h3>
+  <p>
+    Being both in the Northern and Southern Hemispheres, Africa experiences diverse climates. Generally, northern Africa’s summer runs from May to September, while southern Africa’s is from November to March. 
+  </p>
+  <br>
+  <p>
+    In the north, spring and autumn (April–May or October) offer the best weather, while South Africa enjoys pleasant conditions from October–November and April–May. The central regions experience wet and dry seasons; West Africa’s dry season lasts November–April, while East Africa’s main dry season is June–September, ideal for safaris and gorilla treks.
+  </p>
+</section>
+
+<section id="asia">
+  <h2>Asia</h2>
+  <br>
+  <h3>Introduction</h3>
+  <br>
+  <p>
+    <b>Asia</b> is the world's largest and most populous continent, encompassing China and India, the world's two largest countries population-wise. Well over 4 billion of the world's 7 billion people live in Asia and most of the fastest growing countries and cities can be found here.
+    <br><br>
+    From the vast frozen stretches of Siberia to the steamy jungles of Borneo and the dramatic peaks of the Himalayas in the northern part of the Indian sub-continent or the vast deserts of the Arabian Peninsula, Asia is a diverse region that defies categorisation. Modern cities like Tokyo, Shanghai and Singapore herald a growingly urban landscape, but this move towards modernisation is negotiated with the desire to maintain cultural tradition.
+  </p>
+  <br>
+  <h3>Geography</h3>
+  <br>
+  <p>
+    The Asian land mass is huge and with almost <b>45 million square kilometres</b> it covers around <b>30% of the world's land area</b> (just under 9% of the total surface of the planet). This section focuses on the area most travellers know as Asia, not the Middle East and Europe, which many geographers consider part of greater Asia or the Eurasian continent.
+    <br><br>
+    The Asian land mass goes from the frozen dry Arctic in Siberia to the lush and wet jungles of Indonesia and Malaysia. Most of Northern Asia is plains and steppe that gave birth to many amazing empires like the Mongolian Empire. Between North and Central Asia are the Gobi and Taklaman deserts, the latter bordering the Tibetan Highplains. Central Asia is a series of high mountain ranges like the Himalayas, Tianshan and the Hindu Kush with deep depressions that stab way below sea level, making for some very remote cultures and people.
+    <br><br>
+    Further south are mountains covered with dense jungles, home to fascinating peoples that live alongside wild elephants, tigers and rhinos, although not always in a good way given the extinction of the Java and Bali tiger. <b>Kanha</b> and <b>Bandhavgarh National Parks</b> in India are two of the best parks to see the great Bengal tiger in the world. Asia's geography gives birth to some of the most densely populated places on earth and some places that see a person once every few hundred years. The diversity on this land mass allows any traveller to find what they want.
+  </p>
+  <br>
+  <h3>Subregions</h3>
+  <br>
+  <ul>
+    <li><b>East Asia:</b> Countries like China, Japan, South Korea, and Taiwan. Known for its technological advancements, rich history, and cultural heritage.</li>
+    <br>
+    <li><b>Southeast Asia:</b> Countries like Thailand, Vietnam, Indonesia, and the Philippines. Famous for its tropical beaches, vibrant cultures, and diverse cuisines.</li>
+    <br>
+    <li><b>South Asia:</b> Countries like India, Pakistan, Bangladesh, and Sri Lanka. Known for its historical landmarks, spiritual traditions, and bustling cities.</li>
+    <br>
+    <li><b>Central Asia:</b> Countries like Kazakhstan, Uzbekistan, Turkmenistan, and Kyrgyzstan. Known for its vast steppes, ancient Silk Road cities, and nomadic cultures.</li>
+    <br>
+    <li><b>Western Asia (Middle East):</b> Countries like Saudi Arabia, Iran, Turkey, and the United Arab Emirates. Known for its desert landscapes, ancient civilizations, and religious significance.</li>
+  </ul>
+  <br>
+  <h3>Sights and Activities</h3>
+  <br>
+  <h4>Major Cities</h4>
+  <br>
+  <p>
+    Asia is home to some of the largest and fastest growing cities in the world. Many of these cities have upwards of 15 or 20 million people living in or around them. It is expected that in China alone during the next 15 years, about 150 cities will have an additional 2 million inhabitants each! A visit to a massive Mega-Asian city can be a bit overwhelming especially on a first trip. Although seeing that many people living, working and operating in such a close area is truly stunning. Many of the cities have great public transportation systems in them making it easy to get around.
+    <br><br>
+    Here is a list of some of the major cities in Asia:
+    <br><br>
+    Bangkok, Thailand<br>
+    Beijing, China<br>
+    Delhi, India<br>
+    Hanoi, Vietnam<br>
+    Ho Chi Minh, Vietnam<br>
+    Hong Kong, China<br>
+    Kolkata, India<br>
+    Kuala Lumpur, Malaysia<br>
+    Manila, Philippines<br>
+    Moscow, Russia<br>
+    Mumbai, India<br>
+    Seoul, South Korea<br>
+    Shanghai, China<br>
+    Singapore<br>
+    Taipei, Taiwan<br>
+    Tokyo, Japan
+  </p>
+  <br>
+  <h4>Landmarks</h4>
+  <br>
+  <p>
+    How do you create a short list of the most amazing landmarks on the largest continent and one of longest inhabited places on earth? Asian landmarks range from modern buildings to ancient temples, some abandoned and some that have been used for thousands of years. Then on top of the human accomplishments are some of the most stunning natural beauty the world has ever seen. Therefore no matter where you visit in Asia there is some sort of landmark to be experienced.
+    <br><br>
+    Here is a short list of just a fraction of what Asia has to offer:
+    <br><br>
+    <b>Angkor Wat</b> is a 12th century temple located in the ancient city of Angkor, near Siem Reap in Cambodia.<br><br>
+    <b>Bandhavgarh National Park</b> and <b>Kanha National Park</b> in Madhya Pradesh, India, home to the great Bengal tiger.<br><br>
+    <b>The Darvaza gas crater</b> is one of the most extraordinary sites in Turkmenistan and is one of the most apocalyptic landscapes in the world.<br><br>
+    <b>The Great Wall of China</b> is the longest man-made structure, stretching over 6,500 kilometres across China.<br><br>
+    <b>Lake Baikal</b> is the deepest lake in the world, found in Siberia, Russia.<br><br>
+    <b>Mount Everest</b> in the Himalayas is the tallest mountain in the world, found on the border of Nepal and the Tibetan Autonomous Region in China.<br><br>
+    <b>Mount Kinabalu</b> is the tallest mountain on the island of Borneo and also in Malaysia.<br><br>
+    <b>The Petronas Twin Towers</b> are the tallest twin towers in the world, standing at 451.9 metres in Kuala Lumpur, Malaysia.<br><br>
+    <b>The Taj Mahal</b> is a mausoleum in Agra in central India built by emperor Shah Jahan in memory of his favourite wife, Mumtaz Mahal.<br><br>
+    <b>The Yangtze River</b> is one of the world's longest rivers and flows from the Himalayas to Shanghai.
+  </p>
+  <br>
+  <h3>Getting There</h3>
+  <br>
+  <p>
+    Asia is one of the most popular continents for travellers and as a result, flight connections to other areas are extremely good, especially to India, South East Asia, China and Japan, which all have direct flights from Europe, North America and Australia. There are few, if any, ferry options to get to Asia from North America or Australia, other than hoping for a ride on a cargo boat or yacht. Popular overland routes usually start from Europe, either through Russia by Trans-Siberian Railway towards Mongolia and China (the northern route) or by taking the popular overland route from Istanbul through Turkey and Iran to India (southern route).
+  </p>
+  <br>
+  <h3>Best Time to Visit</h3>
+  <br>
+  <p>
+    Asia is the largest continent on Earth and regional differences regarding the weather are huge. The northern, central and eastern parts of Asia are best visited from late Spring to early Autumn, roughly from May to September. During winter temperatures in Siberia, Central Asia, Mongolia and parts of China can drop below -40 °C. If that's your thing, go for it. But the majority of travellers chooses to visit during the warmer months. July and August can be busy in places, as many locals have their holidays, as well as people from Europe and North America.
+    <br><br>
+    On the other hand, the southern and southeastern parts are best visited from November to March, when temperatures are bearable and precipitation is low. This applies to countries like India, Thailand and Vietnam.
+    <br><br>
+    Closer to the equator though, in countries like Malaysia and Indonesia, the rainy seasons can be of importance for your choices.
+  </p>
+</section>
+
+<section id="europe">
+  <h2>Europe</h2>
+  <br>
+
+  <h3>Introduction</h3>
+  <br>
+  <p>
+    <b>Europe</b> may be the world's second smallest continent, but it's a place of extreme importance, both in today's world and throughout history. The grand empires of <b>Ancient Greece</b> and <b>Ancient Rome</b> were the early signposts, but the centuries since that time have seen the rise and fall of more great powers.
+    <br><br>
+    Perhaps the era of Europe's greatest dominance began several centuries ago, as European nations set out to explore, colonise, and "Westernise" the rest of the world. Even now, decades after the official end of colonisation, Europe enjoys the power birthed and fostered during previous centuries.
+    <br><br>
+    Europe may not be large, but it is unique and diverse with more than 50 sovereign states, several dependent territories, and even more languages, historical regions and cultures. Compare the wealth and power of Western Europe with the comparatively underdeveloped Eastern Europe, although even those countries are catching up in the 21st century.
+    <br><br>
+    Enjoy the warmth of Southern Europe, take in breathtaking winter scenery in Northern Europe or discover beautiful old towns of Central Europe. Witness some of the world's most modern buildings in some of the world's oldest cities.
+  </p>
+  <br>
+
+  <h3>Geography</h3>
+  <br>
+  <p>
+    Europe is situated in the western part of Eurasia. It is bounded by the <b>Atlantic Ocean</b> to the west, the <b>Mediterranean Sea</b> to the south and the <b>Arctic Ocean</b> to the north. The eastern boundary with Asia and the Middle East is more tenuous. While there are several competing definitions, the most common one uses the <b>Ural Mountains</b>, the <b>Caspian Sea</b> and the <b>Caucasus</b> as the eastern border. Russia is partially in Europe and partially in Asia.
+    <br><br>
+    Turkey and the island of Greenland do not technically belong in Europe when defined as a continent, although geographically a small part of Turkey west of the Bosporus is located in Europe. Culturally, Turkey belongs to Asia. For travelling purposes however, this country is sometimes included in guidebooks covering Europe.
+    <br><br>
+    Despite being one of the smallest continents, Europe's landscape boasts an incredibly varied terrain. From the <b>Baltic Mountains</b> and <b>Dinaric Alps</b> on the Balkan, the land rises as you go north, with the <b>Carpathian Mountains</b> stretching from Romania to Czech Republic and the <b>Alps</b> jutting up in central Europe. The <b>Apennines</b> extend south from the Alps into the Italian peninsula, while the <b>Pyrenees</b> separate France and Spain.
+    <br><br>
+    Further north, the landscape is less dramatic, from the lowlands in the northwest of Europe to the vast <b>East European Plain</b>. In Scandinavia, the terrain once again becomes mountainous, as the <b>Scandinavian Mountains</b> stretch from the south to the north and Norway's coast is marked by impressive fjords. However, the highest peaks of Europe can be found in the <b>Caucasus</b>, the mountains separating Russia and Georgia. <b>Mount Elbrus</b>, at 5,642 metres, is the highest mountain in Europe.
+    <br><br>
+    There are several major rivers in Europe, including the <b>Volga</b> in Russia, <b>Dnepr</b> in Ukraine and the <b>Danube</b> in Central and Eastern Europe. The <b>Rhine</b>, <b>Elbe</b>, <b>Oder</b>, <b>Vistula</b>, <b>Loire</b>, <b>Rhône</b> and <b>Seine</b> are other famous rivers in Europe, all of which are found in Western and Central Europe. In northern Italy, the <b>Po</b> is the most important waterway, and on the Iberian Peninsula the <b>Tagus</b> and the <b>Guadalquivir</b>.
+  </p>
+  <br>
+
+  <h3>Subregions</h3>
+  <br>
+  <ul>
+    <li><b>Northern Europe:</b> Countries like the United Kingdom, Ireland, Sweden, Norway, Denmark, Finland, and Iceland. Known for its stunning natural landscapes, vibrant cities, and rich cultural heritage.</li>
+    <br>
+    <li><b>Western Europe:</b> Countries like France, Germany, the Netherlands, Belgium, Austria, and Switzerland. Famous for its historical landmarks, art museums, and culinary delights.</li>
+    <br>
+    <li><b>Southern Europe:</b> Countries like Italy, Spain, Portugal, Greece, and Croatia. Known for its Mediterranean coastline, ancient ruins, and vibrant cultures.</li>
+    <br>
+    <li><b>Eastern Europe:</b> Countries like Poland, Hungary, Czech Republic, Romania, and Bulgaria. Known for its medieval towns, castles, and rich history.</li>
+    <br>
+    <li><b>Central Europe:</b> Countries like Switzerland, Austria, Slovakia, and Slovenia. Known for its picturesque landscapes, charming villages, and outdoor activities.</li>
+  </ul>
+  <br>
+
+  <h3>Sights and Activities</h3>
+  <br>
+
+  <h4>Major Cities</h4>
+  <br>
+  <p>
+    Some of the world's most important and fun cities to visit are found in Europe. The list can go on and on. Each city is a symbol of Europe, marrying modern industry with a long, proud heritage.
+    <br><br>
+    Here is a short list of some of the most famous cities in Europe:
+    <br><br>
+    Amsterdam, the Netherlands<br>
+    Athens, Greece<br>
+    Barcelona, Spain<br>
+    Berlin, Germany<br>
+    Brussels, Belgium<br>
+    Budapest, Hungary<br>
+    Copenhagen, Denmark<br>
+    Edinburgh, Scotland (UK)<br>
+    Hamburg, Germany<br>
+    Lisbon, Portugal<br>
+    London, England (UK)<br>
+    Madrid, Spain<br>
+    Moscow, Russia<br>
+    Paris, France<br>
+    Prague, Czechia<br>
+    Rome, Italy<br>
+    St. Petersburg, Russia<br>
+    Stockholm, Sweden<br>
+    Venice, Italy<br>
+    Vienna, Austria<br>
+    Warsaw, Poland<br>
+    Zürich, Switzerland
+  </p>
+  <br>
+
+  <h4>Landmarks</h4>
+  <br>
+  <p>
+    <b>Norwegian Fjords</b> are vast and beautiful. Formed over thousands of years, they are identified by their huge steep sides and cliffs.
+    <br><br>
+    <b>The Alps</b> are great for skiing, summer hikes and rock climbing.
+    <br><br>
+    <b>The Holy Cross Mountains</b>, the oldest mountains in Europe, are low due to long-term erosion and together with their cultural attractions, including Kielce and Sandomierz, seem to be perfect for family trips, both with children and seniors.
+    <br><br>
+    <b>The Eiffel Tower</b> is located in Paris, France. It is one of the most popular landmarks in Europe and one of the most recognisable structures in the whole world.
+    <br><br>
+    <b>Big Ben</b> and <b>Tower Bridge</b> in London are historical marvels of old architecture and British craftsmanship.
+    <br><br>
+    <b>The Icelandic geysirs</b> are some of the most amazing geothermal spots in the world owing their distinctiveness to volcanic activity which is rarely seen elsewhere in Europe.
+    <br><br>
+    <b>Alhambra</b> in Granada in Andalusia, southern Spain is the example of Mudejar architecture.
+    <br><br>
+    <b>Italian cities</b> like Venice, Florence, Pisa and Siena can truly impress anyone.
+    <br><br>
+    <b>Monaco</b> is a great place for gambling and high-end beaches. It is a getaway destination for multi-millionaires to sit in the sunshine on luxurious yachts.
+    <br><br>
+    <b>Auschwitz</b>, a World War II concentration camp in Poland, offers a chilling reminder of recent European history. It has become a symbolic landmark of Nazi atrocities committed during the reign of Hitler and the tragedy of countries conquered by Germany during the Second World War.
+    <br><br>
+    <b>Hermitage</b> in St. Petersburg is the place for all sorts of art.
+    <br><br>
+    <b>The Colosseum</b> in Rome is the ancient gladiatorial arena of the Roman empire. It is one of the largest and most impressive remnants of this ancient civilization.
+    <br><br>
+    <b>Acropolis</b> in Athens is one of the most famous Greek ruins and also stands as the epitome and symbol of the ancient Greeks.
+    <br><br>
+    <b>Jungfrau Railway</b> and the <b>Jungfrau-Aletsch-Bietschhorn World Heritage Site</b> in Switzerland.
+    <br><br>
+    <b>Dubrovnik</b> — Its Old Town is one of Croatia's greatest tourist attractions and a UNESCO World Heritage Site.
+    <br><br>
+    <b>Buckingham Palace</b> is the official London residence of the British monarch. It is wildly popular with tourists.
+    <br><br>
+    <b>Charles Bridge</b> in Prague and the castle are stunning examples of Medieval architecture. Prague's thousand-year history has seen it develop into a multicultural capital.
+    <br><br>
+    <b>The Tower of Pisa</b>, or as it is more commonly known, the <b>Leaning Tower of Pisa</b>, is the freestanding bell tower of the cathedral within the city of Pisa, Italy. Due to a design flaw this building’s oddity has now become a world-famous landmark and popular attraction for tourists.
+    <br><br>
+    <b>Stonehenge</b> in southern England is a mysterious stone circle dating back many thousands of years. Its purpose and origins remain a mystery although archaeologists have many theories.
+    <br><br>
+    <b>The Arc de Triomphe</b> is another Parisian landmark which commemorates those who died during the French revolution and the subsequent wars of Napoleon.
+    <br><br>
+    <b>The Palace of Versailles</b> is a grand and expansive symbol of pre-revolution France and monarchist rule. The huge historical building is complemented by the vast and well-maintained grounds.
+  </p>
+  <br>
+
+  <h3>Getting There</h3>
+  <br>
+  <p>
+    Located at the crossroads between all continents except Oceania, Europe has a wide range of flight connections. Numerous airlines serve hundreds of destinations on a daily basis, especially to North America and the southern and eastern parts of Asia. But there are direct flights to the Middle East, Caribbean, South America and Africa as well. Only Australia and New Zealand, and the Pacific Islands, basically require a change of planes.
+    <br><br>
+    By ferry, Europe can be reached from North Africa (both Morocco and Tunisia have regular ferries) and popular overland routes include those from Asia, either by <b>Trans-Siberian Railway</b> from China and Mongolia through Russia, or from India and Iran to Turkey. Other routes to get to Turkey run from Egypt via Jordan and Syria.
+  </p>
+  <br>
+
+  <h3>Best Time to Visit</h3>
+  <br>
+  <p>
+    By far the best time for most of Europe is the summer season, which lasts from <b>May to September</b>. July and August can be very busy in many countries, and southern Europe can be very hot in some places like Andalusia, Sicily and the Greek islands. If you don't like cold weather, this is by far the best time to visit the northern parts of the continent. Expect 24 hours of daylight though in the extreme north during June and July.
+    <br><br>
+    Some areas focus on wintersports, like parts of Norway, northern Finland and the Alps. The best time for those activities obviously is wintertime from <b>December to March</b>. If you are not into beaches or skiing, travelling around Europe is great in <b>Spring and Autumn</b>, roughly <b>April/May</b> and <b>September/October</b> respectively. Prices are much lower, you'll rarely experience crowds and with flowers and leaves at their best colours, it just adds to the experience.
+  </p>
+</section>
+
+<section id="north-america">
+  <h2>North America</h2>
+  <br>
+
+  <h3>Introduction</h3>
+  <br>
+  <p>
+    Stretching from the Arctic circle to the tropics and from the Pacific Ocean to the Atlantic Ocean, North America is home to a diverse climate and an even more diverse population. North America has opened its arms to everyone and can now only be described as a patchwork of cultures, languages and religions.
+  </p>
+  <br>
+  <p>
+    This diversity both amongst its people and climate can meet the needs and desires of any traveller to its shores. From mountain climbing in the Rocky Mountains, to deep sea fishing off the Atlantic coast, to seeing the Northern Lights (Aurora Borealis) in the Arctic, to soaking up the sun in the heat of Mexico — North America has it all.
+  </p>
+  <br>
+
+  <h3>Geography</h3>
+  <br>
+  <p>
+    The geography of North America is extremely diverse, from the jungles of southern Mexico to deserts to stunning mountains and the ice shelf of the Arctic circle. The Rockies, the longest mountain range, runs from Alaska all the way to Mexico through Canada and the United States along the western part of the land mass. The central parts of Canada and the United States is a large prairie called the Great Plains, which were created by glaciers during the last ice age. Along the east coast of the United States are the Appalachian Mountains, which is a smaller range compared to the Rockies. The western part of United States and northern Mexico are a large desert with several mountain ranges. While the southern part of Mexico is a dense rain forest home to many species.
+  </p>
+  <br>
+  <p>
+    One of the more interesting geographical features of North America are the stunning Great Lakes. These lakes are the largest fresh water lakes in the world and make up large section of the eastern border with the United States and Canada. There are also several large rivers like the Mississippi, Rio Grande, Colorado and Saint Lawrence which dominate the continent. On the west coast of the United States and Canada are several large volcanoes and in the north central part of the United States is the amazing Yellowstone National Park, which is a super caldera hot spot of geothermal uniqueness. The southwest's most famous geological feature is the Grand Canyon, in Arizona. Off the coasts are some very interesting islands that range from barren Arctic waste lands to desert islands with palm trees.
+  </p>
+  <br>
+
+  <h3>Subregions</h3>
+  <br>
+  <ul>
+    <li><b>North America:</b> Countries like the United States, Canada, and Mexico. Known for its diverse landscapes, vibrant cities, and rich cultural heritage.</li>
+    <br><br>
+    <li><b>Central America:</b> Countries like Guatemala, Costa Rica, Panama, and Belize. Famous for its tropical rainforests, ancient ruins, and beautiful beaches.</li>
+    <br><br>
+    <li><b>The Caribbean:</b> Countries like Cuba, Jamaica, the Dominican Republic, and the Bahamas. Known for its stunning beaches, vibrant cultures, and diverse cuisines.</li>
+  </ul>
+  <br>
+
+  <h3>Sights and Activities</h3>
+  <br>
+
+  <h4>The Great Lakes</h4>
+  <br>
+  <p>
+    The Great Lakes, consisting of Lake Superior, Lake Michigan, Lake Huron, Lake Erie and Lake Ontario, are some of the most amazing features of North America and are located on the Canada/United States border. These giant bodies of freshwater seem like oceans and offer great opportunities for relaxation and adventure. If you want to hang out on the beach at Union Pier, hike the Superior Trail or explore the wilderness of Isle Royale National Park there is plenty to do along the shoreline or in the water.
+  </p>
+  <br>
+
+  <h4>Major Cities</h4>
+  <br>
+  <p>
+    <b>Canada</b><br>
+    Calgary, Alberta<br>
+    Montreal, Quebec<br>
+    Ottawa — capital of Canada<br>
+    Toronto, Ontario<br>
+    Vancouver, British Columbia
+  </p>
+  <br>
+  <p>
+    <b>Mexico</b><br>
+    Guadalajara<br>
+    Mexico City<br>
+    Oaxaca
+  </p>
+  <br>
+  <p>
+    <b>United States of America</b><br>
+    Boston, Massachusetts<br>
+    Chicago, Illinois<br>
+    Houston, Texas<br>
+    Los Angeles, California<br>
+    Miami, Florida<br>
+    New Orleans, Louisiana<br>
+    New York, New York State<br>
+    San Francisco, California<br>
+    Seattle, Washington State<br>
+    Washington, D.C.
+  </p>
+  <br>
+
+  <h4>Landmarks</h4>
+  <br>
+  <p>
+    Aurora Borealis, also known as the Northern Lights, is quite beautiful and best viewed during the early or late winter time in the north of the continent, so Alaska, Yukon, Nunavut and the Northwest Territories.<br><br>
+    Barranca del Cobre, also known as Copper Canyon, is one of the most fascinating canyons in the world.<br><br>
+    The Bay of Fundy on the border of the United States with Nova Scotia has one of the highest tides in the world.<br><br>
+    CN Tower is the tallest telecommunications tower in the world, standing at 553 metres tall in Toronto, Canada.<br><br>
+    Death Valley — one of the driest and hottest places in North America, with the world's highest temperature ever recorded.<br><br>
+    Golden Gate Bridge — one of the world's most famous bridges, in San Francisco.<br><br>
+    Grand Canyon — one of the most famous canyons in the world.<br><br>
+    Niagara Falls — daredevils, honeymooners and natural beauty mark this wonder between Lake Erie and Lake Ontario.<br><br>
+    Rocky Mountains and Rocky Mountain National Park.<br><br>
+    Route 66 — one of the most famous journeys and a great route to follow, starting in Chicago and ending in California.<br><br>
+    Statue of Liberty — a gift from the people of France in 1886 to commemorate the centennial of the signing of the Declaration of Independence, is now a symbol of freedom and democracy. Standing on Liberty Island in New York, it is also one of the icons representing the USA.<br><br>
+    Palenque — one of the largest ancient Mayan cities.<br><br>
+    Yellowstone National Park — a massive thermal hot spot.<br><br>
+    Yosemite National Park — a glimpse of the beauty that northern California has to offer.
+  </p>
+  <br>
+
+  <h3>Getting There</h3>
+  <br>
+  <p>
+    North America has direct flights to all continents, with frequent connections from many major US cities to both Europe and (eastern) Asia. To add, there are dozens of flights to both Central America and South America, the Caribbean, and still quite a few to the Middle East, Australia and New Zealand. Africa has just a few direct flights, mainly to/from South Africa from Washington, D.C. You can easily get to North America overland from Central America and there are ferries and cruise ships which connect mainly Florida with the Caribbean Islands.
+  </p>
+  <br>
+
+  <h3>Best Time to Visit</h3>
+  <br>
+  <p>
+    For most of North America, the warmer summer season is the best time for a visit, roughly from May to September. This certainly applies to places like Alaska, most of Canada and the northern half of the USA. Once you go further south, temperatures can be extremely high during the summer season, so visiting just before in spring or after in autumn might be a better idea. Also, for example Florida has a very high humidity and chances of serious amounts of rain and hurricanes during late summer. Hawaii is very popular during the winter months, but can be pleasantly visited year-round. Finally, there are areas which are good for wintersports, such as the Rocky Mountains in the west of Canada and in Colorado for example.
+  </p>
+</section>
+
+<section id="south-america">
+  <h2>South America</h2>
+  <br>
+  <h3>Introduction</h3>
+  <br>
+  <p>
+    South America is an irresistible destination for many travellers. With amazing natural beauty to explore from stunning mountains, pristine beaches and wild rain forests. Then there are amazing precolonial ruins to rival any found around the world from cultures still strong today. Spanish and Portuguese colonial buildings and churches dominate major cities with more gold in them then any other churches in the world, where African, Latin and indigenous cultures have fused. Modern art has exploded in many cities next to thumping dance clubs filled with beautiful people. Add in thundering waterfalls surrounded by vast jungles, massive street parties around Carnival time, and lost then found Inca cities. South America can take a lifetime to truly explore and experience.
+  </p>
+  <br>
+  <h3>Geography</h3>
+  <br>
+  <p>
+    The geography of South America is extremely diverse stretching north of the equator to almost touching northern Antarctica. Along the Pacific coast there is the stunningly high mountain range of the Andes, which is also the longest mountain range in the world. This mountain range runs for over 7,000 kilometres and its highest mountain is Aconcagua reaching a stunning 6,962 metres above sea level and one of the most famous mountains on the continent. There are also hundreds of volcanoes in the Andes, many of them being extremely active. Large parts of the Andes are also giving place to relatively flatter areas called Altiplano. Here you'll find salt lakes, adapted wildlife and even some settlements.<br><br>
+    The north central area of South America is largely filled with the amazing Amazon Rainforest, which is the largest rainforest in the world and is home to amazing biodiversity. The most southern part of the continent is generally called Patagonia, comprising the southern section of the Andes mountains to the southwest towards the Pacific Ocean and from the east of the cordillera to the valleys it follows south through Colorado River towards Carmen de Patagones in the Atlantic Ocean. To the west, it includes Tierra del Fuego. Argentine Patagonia is for the most part a region of steppelike plains. South America is also home to the Angels Falls in Venezuela, which are the highest waterfalls in the world, the Amazon River, which is the largest river by volume of water and the Atacama Desert, which is the second driest place on earth (after the Dry Valleys on Antarctica) and the highest navigable lake in the world Lake Titicaca on the border of Peru and Bolivia. Anyone looking for high mountains, amazing beaches or steaming jungles can find their perfect place in South America.
+  </p>
+  <br>
+  <h3>Subregions</h3>
+  <br>
+  <ul>
+    <li><b>Andean States:</b> Countries like Colombia, Ecuador, Peru, Bolivia, and Venezuela. Known for its stunning mountain landscapes, ancient ruins, and vibrant cultures.</li> 
+    <br><br>
+    <li><b>Southern Cone:</b> Countries like Argentina, Chile, Uruguay, and Paraguay. Famous for its diverse landscapes, from the Andes Mountains to the Pampas grasslands and Patagonia.</li>
+    <br><br>
+    <li><b>Brazil:</b> The largest country in South America, known for its Amazon rainforest, vibrant cities like Rio de Janeiro and São Paulo, and iconic landmarks like Christ the Redeemer.</li>
+    <br><br>
+    <li><b>The Guianas:</b> Countries like Guyana, Suriname, and French Guiana. Known for its dense rainforests, diverse wildlife, and unique cultural heritage.</li>
+  </ul>
+  <br>
+  <h3>Sights and Activities</h3>
+  <br>
+  <h4>Major Cities</h4>
+  <br>
+  <p>
+    Bogota, Colombia <br>
+    Buenos Aires, Argentina <br>
+    Caracas, Venezuela <br>
+    Guayaquil, Ecuador <br>
+    La Paz, Bolivia <br>
+    Lima, Peru <br>
+    Montevideo, Uruguay <br>
+    Quito, Ecuador <br>
+    Rio de Janeiro, Brazil <br>
+    Sao Paulo, Brazil <br>
+    Santiago, Chile
+  </p>
+  <br>
+  <h4>Landmarks</h4>
+  <br>
+  <p>
+    The Amazon Rainforest and river make up one of the largest rainforest watershed regions in the world.<br><br>
+    The Andes Mountains are stunning mountains that reach dizzying heights up to almost 7,000 metres above sea level.<br><br>
+    The Galapagos Islands are one of the most famous wildlife preserves in the world and home to some very strange animals. Follow the foot steps of history when you visit this untouched wilderness.<br><br>
+    The Iguazu Falls are one of the most famous waterfalls in the world.<br><br>
+    Machu Picchu is one of the most famous ruins in the world.<br><br>
+    Patagonia is an amazing region in the south of South America with great plains, mountains, glaciers and untouched wilderness. Just remember to bring your rain gear and sweater for those chilly evenings.<br><br>
+    The Pantanal is one of the most famous wildlife preserves in the world.<br><br>
+    The Salar de Uyuni is the world's largest salt flat at well over 10,000 square kilometres.<br><br>
+    Angel Falls in Venezuela are the world's highest waterfalls at nearly 1,000 metres.<br><br>
+    Chapada Diamantina National Park in Brazil is an amazing region with great plains, mountains, waterfalls and untouched wild nature.<br><br>
+    Christ the Redeemer statue in Rio de Janeiro is one of the most famous landmarks in South America.
+  </p>
+  <br>
+  <h3>Getting There</h3>
+  <br>
+  <p>
+    South America has good connections to both North America and Central America, as well as quite a few direct flights from Europe, especially from Spain and Portugal and some other main cities. The Caribbean Islands have some good connections as well. Ferries to South America hardly exist, the best options are getting a ride on a boat between Panama and Colombia (overland route from Central America), or the irregular ferry between Venezuela and Trinidad and Tobago.
+  </p>
+  <br>
+  <h3>Best Time to Visit</h3>
+  <br>
+  <p>
+    Its vast size and altitude contrasts means there is no single best time to visit South America. June, for example, offers cool, dry weather in Galapagos, steamy 30 °C in the Amazon, but snow and ice will shut down much of southern Patagonia, which is best visited from November to February. Steep contour shifts can mean balmy temperatures on Chile's coast but snowy and cold weather just 100 kilometres away up into the Andes mountains. September to November offers a good balance in many places, with generally comfortable spring temperatures and dry weather. But check specific locations, even within the same country, to help you set nature's thermostat to suit yourself during trips.
+  </p>
+</section>
+
+<section id="oceania">
+  <h2>Oceania</h2>
+  <br>
+  <h3>Introduction</h3>
+  <br>
+  <p>
+    Oceania is the region often used to group Australia, New Zealand and the Pacific Islands. Although half of it is politically part of Indonesia (thus Asia), sometimes the island of New Guinea is considered to be located within Oceania as a whole. Here, only Papua New Guinea is mentioned, West Papua, the Indonesia half, is not.
+  </p>
+  <br>
+  <h3>Geography</h3>
+  <br>
+  <p>
+    Oceania is a region of numerous islands, mostly in the Pacific Ocean and vicinity. The boundaries of Oceania can be defined in several different ways, but most recognize parts of Australasia such as Australia, New Zealand and Papua New Guinea, and all or part of the Malay Archipelago as part of the region.
+  </p>
+  <br>
+  <h3>Subregions</h3>
+  <br>
+  <p>
+    Ethnologically, the islands in Oceania can be divided into three subregions; Melanesia, Micronesia and Polynesia. The latter covers much of the central and southern parts of the Pacific Ocean, Micronesia the northern part and Melanesia the western part with most of the larger islands.
+  </p>
+  <br>
+  <h3>Sights and Activities</h3>
+  <br>
+  <h4>Landmarks</h4>
+  <br>
+  <p>
+    Sydney Opera House <br><br>
+    Great Ocean Road - between Melbourne and Adelaide <br><br>
+    Milford and Doubtful Sound - New Zealand <br><br>
+    Mount Cook - New Zealand <br><br>
+    Tongariro National Park - New Zealand <br><br>
+    Uluru (Ayers Rock) - in central Australia <br><br>
+    Tropical North Queensland / Cape Tribulation <br><br>
+    Fraser Island - one of the biggest sand islands in the world <br><br>
+    Great Barrier Reef - the largest coral reef in the world <br><br>
+    Kakadu National Park - located in the north of Australia, with both cultural and natural importance <br><br>
+    The Kimberleys - a landscape of stark beauty in the northwest of Australia <br><br>
+    Moais on Easter Island <br><br>
+    Tuvalu - the first nation to be flooded when the sea keeps rising <br><br>
+    Bora Bora - cliché version of tropical paradise <br><br>
+    Nan Madol - this is the stunning sunken stone city off the eastern shore of the Island of Pohnpei, one of the four states in the Federated States of Micronesia <br><br>
+    Puncak Jaya (4,884 metres) in West Papua, Indonesia is the highest peak in the Australian continent, although politically Indonesia isn't considered part of Oceania.
+  </p>
+  <br>
+  <h4>Major Cities</h4>
+  <br>
+  <p>
+    Adelaide, Australia <br>
+    Auckland, New Zealand <br>
+    Brisbane, Australia <br>
+    Cairns, Australia <br>
+    Canberra, Australia <br>
+    Christchurch, New Zealand <br>
+    Darwin, Australia <br>
+    Hobart, Australia <br>
+    Melbourne, Australia <br>
+    Perth, Australia <br>
+    Sydney, Australia <br>
+    Wellington, New Zealand
+  </p>
+  <br>
+  <h3>Getting There</h3>
+  <br>
+  <p>
+    Oceania is the only continent which is almost exclusively reached by plane, as overland routes are completely absent and there are few ferries. Probably a cruise ship, cargo ship or yacht is your only option by sea. Australia has most flights, especially to Sydney and Melbourne, and a couple of other main cities. There are direct flights to a few cities in Africa and South America, more so in North America and numerous airlines serve Australia, and New Zealand to a lesser extent, from Asian cities. The Pacific Islands have few direct connections from other continents, although Fiji is a good hub reached from the USA as well as several Asian countries. Easter Island and French Polynesia have flights to Santiago de Chile.
+  </p>
+  <br>
+  <h3>Best Time to Visit</h3>
+  <br>
+  <p>
+    The best time for a visit really depends on where you are going, as there are differences between Australia and the Pacific Islands for example. In general, the southern half of Australia and all of New Zealand is best visited during the summer months from November to March, as it is warm and mostly dry. Note that inland temperatures in January and February can rise well above 40 °C. Not a huge problem, but not a good time for long walks or other physical activities. The northern half of Australia has a wet season during those same months, so it's better to visit from April/May to October, when the weather is drier and cooler, which makes it much more pleasant. <br><br>
+    April-November is also the best time to visit most of the Pacific Islands. The winter trade wind blows fairly steadily during these months, bringing generally fine tropical weather throughout the area. Rarotonga in the Cook Islands and Tongatapu in Tonga are further from the equator and see cooler temperatures. Breezy wintertime nights can feel chilly on those islands.
+  </p>
+</section>
+</div>
+{% endblock %}
