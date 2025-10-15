@@ -657,4 +657,23 @@
   </p>
 </section>
 </div>
+
+<a href="#" class="back-to-top-btn" onclick="scrollToTop(event)">
+  <i class="fa-solid fa-arrow-up"></i>
+</a>
+
+<script>
+function scrollToTop(e) {
+  e.preventDefault();
+  // Scroll the main-content div to top
+  const mainContent = document.querySelector('.main-content');
+  if (mainContent) {
+    mainContent.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+}
+</script>
+
 {% endblock %}

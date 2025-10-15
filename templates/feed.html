@@ -1,17 +1,103 @@
 {% extends "base.html" %}
 {% block title %}Feed - Transit Travel Forum{% endblock %}
 {% block content %}
-  <div class="feed-container">
-    <div class="post">
-      <img src="https://via.placeholder.com/250x150" alt="Travel Pic">
-      <div class="text">
-        <h2>Trip to Paris</h2>
-        <p>This is a post about my trip to Paris! Beautiful city.</p>
-        <div class="actions">
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-regular fa-comment"></i>
+
+<div class="feed-header">
+  <h1>Travel Feed</h1>
+  <p class="feed-subtitle">Discover amazing travel experiences from our community</p>
+</div>
+
+<div class="feed-container">
+  {% if posts %}
+    {% for post in posts %}
+    <div class="feed-post">
+      <div class="post-header">
+        <div class="post-author">
+          <img src="{{ url_for('static', filename='images/profile.png') }}" alt="Profile" class="author-avatar">
+          <div class="author-info">
+            <h3 class="author-name">{{ post['username'] }}</h3>
+            <span class="post-time">{{ post['created_at'] }}</span>
+          </div>
         </div>
       </div>
+
+      <div class="post-body">
+        <h2 class="post-title">{{ post['title'] }}</h2>
+        
+        {% if post['image_path'] %}
+          {% if post['image_path'].startswith('http') %}
+            <img src="{{ post['image_path'] }}" alt="{{ post['title'] }}" class="post-image">
+          {% else %}
+            <img src="{{ url_for('static', filename=post['image_path']) }}" alt="{{ post['title'] }}" class="post-image">
+          {% endif %}
+        {% endif %}
+        
+        <p class="post-text">{{ post['content'] }}</p>
+      </div>
+
+      <div class="post-footer">
+        <!-- Like Button -->
+        <form method="POST" action="{{ url_for('like_post', post_id=post['id']) }}" style="display: inline;">
+          <button type="submit" class="action-btn like-btn {% if post['user_has_liked'] %}liked{% endif %}">
+            <i class="fa-{% if post['user_has_liked'] %}solid{% else %}regular{% endif %} fa-heart"></i>
+            <span>{{ post['like_count'] }} {% if post['like_count'] == 1 %}Like{% else %}Likes{% endif %}</span>
+          </button>
+        </form>
+
+        <!-- Comment Button -->
+        <button class="action-btn comment-btn" onclick="toggleComments({{ post['id'] }})">
+          <i class="fa-regular fa-comment"></i>
+          <span>{{ post['comment_count'] }} {% if post['comment_count'] == 1 %}Comment{% else %}Comments{% endif %}</span>
+        </button>
+      </div>
+
+      <!-- Comments Section -->
+      <div id="comments-{{ post['id'] }}" class="comments-section" style="display: none;">
+        <div class="comments-list">
+          {% for comment in post['comments'] %}
+          <div class="comment-item">
+            <img src="{{ url_for('static', filename='images/profile.png') }}" alt="Profile" class="comment-avatar">
+            <div class="comment-content">
+              <div class="comment-header">
+                <span class="comment-author">{{ comment['username'] }}</span>
+                <span class="comment-time">{{ comment['created_at'] }}</span>
+              </div>
+              <p class="comment-text">{{ comment['comment_text'] }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+        <form method="POST" action="{{ url_for('comment_post', post_id=post['id']) }}" class="comment-form">
+          <input type="text" name="comment_text" placeholder="Write a comment..." required>
+          <button type="submit" class="btn-comment-submit">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
     </div>
-  </div>
+    {% endfor %}
+  {% else %}
+    <div class="empty-feed">
+      <i class="fa-solid fa-inbox"></i>
+      <h2>No posts yet</h2>
+      <p>Be the first to share your travel experience!</p>
+      <a href="{{ url_for('create') }}" class="btn-create-post">
+        <i class="fa-solid fa-plus"></i> Create Post
+      </a>
+    </div>
+  {% endif %}
+</div>
+
+<script>
+function toggleComments(postId) {
+  const commentsSection = document.getElementById('comments-' + postId);
+  if (commentsSection.style.display === 'none') {
+    commentsSection.style.display = 'block';
+  } else {
+    commentsSection.style.display = 'none';
+  }
+}
+</script>
+
 {% endblock %}
