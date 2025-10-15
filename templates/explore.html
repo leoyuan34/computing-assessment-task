@@ -6,7 +6,6 @@
 
 <br>
 
-<!-- Grid of continents -->
 <div class="explore-grid">
   <a href="#africa" class="grid-item">
     <img src="{{ url_for('static', filename='images/continents/africa.jpg') }}" alt="Africa">
@@ -34,7 +33,6 @@
   </a>
 </div>
 
-<!-- Info sections -->
 <div class="continent-info">
   <section id="africa">
   <h2>Africa</h2>
@@ -665,7 +663,6 @@
 <script>
 function scrollToTop(e) {
   e.preventDefault();
-  // Scroll the main-content div to top
   const mainContent = document.querySelector('.main-content');
   if (mainContent) {
     mainContent.scrollTo({

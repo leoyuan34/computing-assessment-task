@@ -10,7 +10,6 @@
     </button>
   </div>
 
-  <!-- Success/Error Messages -->
   {% if success %}
   <div class="message success-message">
     <i class="fa-solid fa-circle-check"></i> {{ success }}
@@ -23,7 +22,6 @@
   </div>
   {% endif %}
 
-  <!-- Create Post Form (Hidden by default) -->
   <div id="createForm" class="create-form-container" style="display: none;">
     <div class="create-form-card">
       <div class="form-header">
@@ -60,7 +58,6 @@
     </div>
   </div>
 
-  <!-- Posts List -->
   <div class="posts-list">
     {% if posts %}
       {% for post in posts %}

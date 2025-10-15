@@ -5,7 +5,6 @@
 <h1>My Profile</h1>
 
 <div class="profile-container">
-  <!-- Profile Header -->
   <div class="profile-header">
     <img src="{{ url_for('static', filename='images/profile.png') }}" alt="Profile Picture" class="profile-pic-large">
     <div class="profile-info">
@@ -14,7 +13,6 @@
     </div>
   </div>
 
-  <!-- Success/Error Messages -->
   {% if success %}
   <div class="message success-message">
     <i class="fa-solid fa-circle-check"></i> {{ success }}
@@ -27,11 +25,9 @@
   </div>
   {% endif %}
 
-  <!-- Edit Profile Section -->
   <div class="profile-section">
     <h3><i class="fa-solid fa-user-pen"></i> Edit Profile</h3>
     
-    <!-- Change Username -->
     <form method="POST" action="{{ url_for('update_username') }}" class="profile-form">
       <div class="form-group">
         <label for="new_username">Username</label>
@@ -40,7 +36,6 @@
       <button type="submit" class="btn-primary">Update Username</button>
     </form>
 
-    <!-- Change Email -->
     <form method="POST" action="{{ url_for('update_email') }}" class="profile-form">
       <div class="form-group">
         <label for="new_email">Email</label>
@@ -49,7 +44,6 @@
       <button type="submit" class="btn-primary">Update Email</button>
     </form>
 
-    <!-- Change Password -->
     <form method="POST" action="{{ url_for('update_password') }}" class="profile-form">
       <div class="form-group">
         <label for="current_password">Current Password</label>
@@ -67,7 +61,6 @@
     </form>
   </div>
 
-  <!-- Account Actions -->
   <div class="profile-section">
     <h3><i class="fa-solid fa-gear"></i> Account Settings</h3>
     <a href="{{ url_for('logout') }}" class="btn-secondary">

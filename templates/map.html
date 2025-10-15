@@ -5,10 +5,8 @@
 <h1>World Map</h1>
 <p>Click a continent to explore more details.</p>
 
-<!-- Container for map -->
 <div id="world-map" style="height: 600px; width: 100%; border-radius: 12px; overflow: hidden; margin-top: 20px;"></div>
 
-<!-- Leaflet.js (Open-source map library) -->
 <link
   rel="stylesheet"
   href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -16,16 +14,13 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
 <script>
-  // Initialize map
   var map = L.map("world-map").setView([20, 0], 2);
 
-  // Add tile layer
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 6,
     attribution: "© OpenStreetMap contributors"
   }).addTo(map);
 
-  // Continent markers (or rough central coordinates)
   const continents = [
     { name: "Africa", coords: [1.5, 17], id: "africa" },
     { name: "Asia", coords: [34, 100], id: "asia" },
@@ -35,7 +30,6 @@
     { name: "Oceania", coords: [-25, 135], id: "oceania" }
   ];
 
-  // Add markers with click links
   continents.forEach(continent => {
     const marker = L.marker(continent.coords)
       .addTo(map)

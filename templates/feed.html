@@ -36,7 +36,6 @@
       </div>
 
       <div class="post-footer">
-        <!-- Like Button -->
         <form method="POST" action="{{ url_for('like_post', post_id=post['id']) }}" style="display: inline;">
           <button type="submit" class="action-btn like-btn {% if post['user_has_liked'] %}liked{% endif %}">
             <i class="fa-{% if post['user_has_liked'] %}solid{% else %}regular{% endif %} fa-heart"></i>
@@ -44,14 +43,12 @@
           </button>
         </form>
 
-        <!-- Comment Button -->
         <button class="action-btn comment-btn" onclick="toggleComments({{ post['id'] }})">
           <i class="fa-regular fa-comment"></i>
           <span>{{ post['comment_count'] }} {% if post['comment_count'] == 1 %}Comment{% else %}Comments{% endif %}</span>
         </button>
       </div>
 
-      <!-- Comments Section -->
       <div id="comments-{{ post['id'] }}" class="comments-section" style="display: none;">
         <div class="comments-list">
           {% for comment in post['comments'] %}
