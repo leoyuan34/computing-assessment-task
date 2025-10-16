@@ -1,5 +1,14 @@
 # transit travel tips
 
+### website instructions
+
+1. download files from github and upload into vscode
+2. run python main.py
+3. once website is running, user can sign up for a website or use the following login:
+
+email: test1@gmail.com
+password: test1
+
 ## website overview
 Transit Travel Tips is a user-driven website designed to help travellers share and discover advice about experiences from travelling through various destinations. The platform will feature a clean, easy-to-use interface with categorized forums, search tools, and user profiles. It aims to create a welcoming and informative community hub with multilingual support and secure, scalable infrastructure. The design will focus on clarity, accessibility, and smooth performance across devices.
 
@@ -147,6 +156,9 @@ feed page:
 - best practices: 93
 - seo: 91
 
-## overview
+### acknowledgments
+throughout the task, i sought help from peers, online forums, and ai. my peers helped me overcome my original issue of git and python, where vscode would not download those files from the flask template code. online forums helped me find the code to route my .html files to load on my website. furthermore, information on my explore page were found from a website. finally, i used ai to help me generate the text and headings for the different posts on the website's feed page. however, due to the limitations of ai, the images generated were unable to show. i additionally used ai to help design certain elements of my website. for example, i used ai for help with the icons on my sidebar.
 
-this task has allowed me 
+https://www.geeksforgeeks.org/python/flask-creating-first-simple-application/ : website for flask routing
+
+https://www.travellerspoint.com/guide/Africa/ : website containing information from my website's explore page.
