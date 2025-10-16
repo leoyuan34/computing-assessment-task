@@ -10,7 +10,7 @@ email: test1@gmail.com
 password: test1
 
 ## website overview
-Transit Travel Tips is a user-driven website designed to help travellers share and discover advice about experiences from travelling through various destinations. The platform will feature a clean, easy-to-use interface with categorized forums, search tools, and user profiles. It aims to create a welcoming and informative community hub with multilingual support and secure, scalable infrastructure. The design will focus on clarity, accessibility, and smooth performance across devices.
+Transit Travel Tips is a user-driven website designed to help travellers share and discover advice about experiences from travelling through various destinations. The platform will feature a clean, easy-to-use interface with categorized forums, search tools, and user profiles. It aims to create a welcoming and informative community hub with multilingual support and secure, scalable infrastructure. The design will focus on clarity, accessibility, and smooth performance across devices. Our goal is to focus on a supportive online travel forum providing users with travel tips across the continents.
 
 
 | **functional requirements** | **non-functional requirements** |
@@ -28,7 +28,7 @@ Transit Travel Tips is a user-driven website designed to help travellers share a
 for my first wireframe, colour palattes and typography were not mainly focused on. the header placement and design layout were experimented with.
 
 ### theme
-the overall theme of the website is social media apps such as instagram, especially the sidebar containing the home, messages, notifications and explore buttons. however, instead of the search bar being on the side, there will be a global search bar at the top of the website, similar to the one on airbnb.
+the overall theme of the website is social media apps such as instagram, especially the sidebar containing the home, messages, notifications and explore buttons. however, instead of the search bar being on the side, there will be a global search bar at the top of the website, similar to the one on airbnb. 676767
 
 ![instagram sidebar](images/instagram_sidebar.png)
 ![airbnb searchbar](images/airbnb_searchbar.png)
